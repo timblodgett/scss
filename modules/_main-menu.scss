@@ -1,0 +1,47 @@
+.main-navigation {
+	ul {
+		list-style-type: none;
+		margin: 0;
+	}
+
+	.menu {}
+
+	.menu-item {
+		position: relative;
+
+		a {
+			display: block;
+			padding: .5em 1.5em;
+			border-bottom: .0625em solid #bfc0be;
+			text-decoration: none;
+
+			@include breakpoint(grande) {
+				padding: 0;
+				border: none;
+			}
+		}
+	}
+
+	.menu-item-has-children {}
+
+	.sub-menu {}
+}
+
+.menu-main-menu-container {}
+
+.menu-toggle {
+	background: #ef6927;
+	border: none;
+	padding: .5em;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1em;
+
+	&:hover {
+		background: #ef6927;
+	}
+
+	@include breakpoint(grande) {
+		display: none;
+	}
+}
