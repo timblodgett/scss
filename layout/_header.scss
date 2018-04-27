@@ -1,10 +1,146 @@
-.site-header {}
+.header-top {
+	background: $bg_green;
 
-.site-title {
+	@include breakpoint(phone) {
+		padding: 0 1.25rem;
+		.wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+.site-branding {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: .9375rem 1.25rem;
+	color: $white;
+
+	@include breakpoint(phone) {
+		padding-left: 0;
+	}
+}
+
+.csu-signature {
+	margin-right: .9375rem;
+	padding-right: .9375rem;
+	border-right: .125rem solid $white;
+	font-size: 1rem;
+}
+
+.signature-link {
+	@include transition();
 	display: block;
-	background: url(../images/logo.png) no-repeat center center / contain;
-	// width: 300px;
-	// height: 75px;
+	width: $acronym_width;
+	height: $signature_height;
+	background: url(../images/signature-acronym.svg) no-repeat center center / contain;
+	color: $white;
+
+	@include breakpoint(tablet) {
+		width: $stacked_width;
+		background-image: url(../images/signature-stacked.svg);
+	}
+
+	@include breakpoint(desktop) {
+		width: $oneline_width;
+		background-image: url(../images/signature-oneline.svg);
+	}
+}
+
+.secondary-identifier {
 	margin: 0;
-	font-size: 1em;
+	font-family: $proxima;
+	font-size: .875rem;
+	font-weight: 400;
+	line-height: 1;
+	@include tracking(100);
+	text-transform: uppercase;
+
+	@include breakpoint(tablet) {
+		font-size: 1.1875rem;
+	}
+}
+
+.identifier-link {
+	color: $white;
+	text-decoration: none;
+
+	&:visited {
+		color: $white;
+	}
+
+	&:hover, &:active, &:focus {
+		color: $white;
+	}
+}
+
+.top-nav {
+	display: flex;
+	justify-content: center;
+	padding: 0 1.25rem;
+	background: $dk_green;
+
+	@include breakpoint(phone) {
+		padding: 0 .75rem;
+	}
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+	width: calc((100% / 3) - (.5rem * 2 / 3));
+	padding: .5rem 0;
+	color: $white;
+	text-decoration: none;
+
+	@include breakpoint(phone) {
+		flex-wrap: wrap;
+		text-align: center;
+	}
+
+	&:visited {
+		color: $white;
+	}
+
+	&:hover, &:active, &:focus {
+		color: $white;
+	}
+
+	&:not(:last-child) {
+		margin-right: .5rem;
+	}
+}
+
+.nav-item-icon {
+	margin-right: .375rem;
+	font-size: .875em;
+
+	@include breakpoint(phone) {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		font-size: 1.75rem;
+		line-height: 1;
+	}
+}
+
+.nav-item-text {
+	font-size: .875em;
+	@include tracking(30);
+	text-transform: uppercase;
+
+	@include breakpoint(phone) {
+		display: block;
+		font-size: .75em;
+		line-height: 1;
+	}
+}
+
+.header-nav {
+	padding: 0 1.25rem;// .25rem 1.25rem;
+	background: $bg_ltgreen;
+	color: $white;
 }

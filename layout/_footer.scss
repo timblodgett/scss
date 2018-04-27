@@ -1,1 +1,69 @@
-.site-footer {}
+.main-footer {
+	padding: 1.25em;
+	background: $bg_ltgreen;
+	color: $white;
+}
+
+.csu-footer {
+	padding: 1.25em;
+	background: $bg_green;
+	color: $white;
+
+	.wrapper {
+		@include transition();
+		font-size: .9375em;
+		@include tracking(30);
+
+		@include breakpoint(desktop) {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.copyright {
+		opacity: .8;
+		margin-top: .75em;
+	}
+}
+
+.csu-nav {
+	.menu {
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 .5em 0 0;
+	}
+
+	.menu-link {
+		display: inline-block;
+		opacity: .8;
+		margin: 0 1em .5em 0;
+		color: $white;
+		text-decoration: none;
+
+		&:visited {
+			color: $white;
+		}
+
+		&:hover, &:active, &:focus {
+			opacity: 1;
+			text-decoration: underline;
+		}
+	}
+}
+
+.footer-signature {
+	@include transition();
+	width: 100%;
+	max-width: $wordmark_width;
+	margin: 1.25em auto 0;
+	margin-right: 0;
+
+	@include breakpoint(tablet) {
+		margin-right: 0;
+	}
+
+	@include breakpoint(desktop) {
+		margin-top: 0;
+	}
+}

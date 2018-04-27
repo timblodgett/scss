@@ -1,22 +1,49 @@
 // Color Variables
 // Brand Colors
-$csu_green: #004c23;
-$csu_gold:  #cbc46e;
-$white:     #fff;
+$csu_green:       #004C23;
+$bg_green:        #1E4D2B;
+$bg_ltgreen:      lighten($bg_green, 4%);
+$dk_green:        darken($csu_green, 2%);
+$csu_gold:        #CBC46E;
+$white:           #fff;
 
 // Secondary Colors
-$black:     #58595b;
+$black_80:        #58595b;
+$aggie_orange:    #f47920;
 
+// Tertiary Colors
+$alfalfa:         #c4d82e;
+$canyon:          #ea5329;
+$dark_slate:      #005356;
+$reservoir:       #00a5b8;
+$sunshine:        #f9c606;
 
-$gray: #333;
-
-$body_color: $gray;
+// Theme Colors
+$body_color:      $black_80;
+$heading_color:   #333;
+$selection_bg:    lighten($csu_gold, 4%);
+$selection_color: $dk_green;
 
 
 // Font Variables
 $system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-
-$body_font: $system;
-$heading_font: $system;
+$proxima: 'Proxima Nova', sans-serif;
+$factoria: 'Factoria', sans-serif;
 
 $line_height: 1.5;
+
+// Theme Fonts
+$body_font: $proxima;
+$heading_font: $factoria;
+$ident_font: $proxima;
+
+/* CSU Signature Sizes
+ * acronym:  609 x 229 -- min: 113 -- max: 146
+ * stacked:  929 x 229 -- min: 172 -- max: 221
+ * oneline: 1883 x 229 -- min: 350 -- max: 450
+ */
+$signature_height: 2.75rem;
+$acronym_width: 7.3125rem;
+$stacked_width: 11.125rem;
+$oneline_width: 22.625rem;
+$wordmark_width: 22.625em;

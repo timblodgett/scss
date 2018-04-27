@@ -4,44 +4,50 @@
 		margin: 0;
 	}
 
-	.menu {}
+	.menu {
+		display: flex;
+		align-items: center;
+
+		& > .menu-item {
+			margin-right: 1.25rem;
+		}
+	}
 
 	.menu-item {
 		position: relative;
 
 		a {
 			display: block;
-			padding: .5em 1.5em;
-			border-bottom: .0625em solid #bfc0be;
+			border-top: .25rem solid transparent;
+			border-bottom: .25rem solid transparent;
+			padding: .375rem .125em;
+			color: $white;
+			@include tracking(50);
 			text-decoration: none;
-
-			@include breakpoint(grande) {
-				padding: 0;
-				border: none;
-			}
 		}
 	}
-
-	.menu-item-has-children {}
-
-	.sub-menu {}
 }
 
-.menu-main-menu-container {}
+.menu-main-menu-container {
+	display: none;
+
+	@include breakpoint(tablet) {
+		display: block;
+	}
+}
 
 .menu-toggle {
-	background: #ef6927;
+	background: $aggie_orange;
 	border: none;
 	padding: .5em;
-	cursor: pointer;
-	color: #fff;
+	color: $white;
 	font-size: 1em;
 
 	&:hover {
-		background: #ef6927;
+		background: $aggie_orange;
 	}
 
-	@include breakpoint(grande) {
+	@include breakpoint(tablet) {
 		display: none;
 	}
 }

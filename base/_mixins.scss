@@ -22,17 +22,6 @@
 	transition: $prop $duration $timeFunc $delay;
 }
 
-@mixin selection($color: #b3d4fc) {
-	::-moz-selection {
-		background: $color;
-		text-shadow: none;
-	}
-	::selection {
-		background: $color;
-		text-shadow: none;
-	}
-}
-
 @mixin tracking($num) {
 	letter-spacing: ( $num / 1000 ) * 1em;
 }
@@ -43,8 +32,6 @@
 	margin: 0;
 	border: .0625em solid;
 	border-radius: .1875em;
-	/* Improve cursor style usability and consistency between image-type 'input' and others */
-	cursor: pointer;
 	/* Correct font size not being inherited in all browsers */
 	font-size: 100%;
 	/* Improve appearance and consistency in all browsers */

@@ -4,10 +4,40 @@
 @import 'mixins';
 @import 'helpers';
 
-@include selection(); // accepts color value or defaults to #b3d4fc
+::-moz-selection {
+	background: $selection_bg;
+	color: $selection_color;
+	text-shadow: none;
+}
+::selection {
+	background: $selection_bg;
+	color: $selection_color;
+	text-shadow: none;
+}
 
 :last-child {
 	margin-bottom: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: $white;
+}
+
+.site {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100%;
+
+	& > * {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 body,
@@ -23,7 +53,9 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	margin-bottom: 1em;
+	color: $heading_color;
 	font-family: $heading_font;
+	font-weight: 600;
 }
 
 h1 {
@@ -77,6 +109,12 @@ code, kbd, tt, var {
 abbr, acronym {
 	cursor: help;
 	text-decoration: dotted underline;
+
+	.menu-link & {
+		cursor: pointer;
+		font-variant: none;
+		text-decoration: none;
+	}
 }
 
 mark, ins {
@@ -165,17 +203,9 @@ th {
 	font-weight: bold;
 }
 
-// a {
-	// color: #F0141E;
-
-	// &:visited {
-	// 	color: #F0141E;
-	// }
-
-	// &:hover, &:focus, &:active {
-	// 	color: #F0141E;
-	// }
-// }
+a {
+	@include transition();
+}
 
 audio, canvas, iframe, img, svg, video {
 	vertical-align: middle;
