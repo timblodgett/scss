@@ -6,10 +6,6 @@
 	display: block;
 }
 
-.hentry {
-	margin: 0 0 #{$line_height}em;
-}
-
 .updated:not(.published) {
 	display: none;
 }
