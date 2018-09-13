@@ -1,11 +1,18 @@
+.site-header {
+	-ms-grid-row: 1;
+	grid-row: 1;
+}
+
 .header-top {
 	background: $bg_green;
 
-	@include breakpoint(phone) {
+	@include breakpoint(tablet) {
 		padding: 0 1.25rem;
+
 		.wrapper {
 			display: flex;
 			justify-content: space-between;
+			max-width: 100rem;
 		}
 	}
 }
@@ -75,72 +82,8 @@
 	}
 }
 
-.top-nav {
-	display: flex;
-	justify-content: center;
-	padding: 0 1.25rem;
-	background: $dk_green;
-
-	@include breakpoint(phone) {
-		padding: 0 .75rem;
-	}
-}
-
-.nav-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex: 0 0 auto;
-	width: calc((100% / 3) - (.5rem * 2 / 3));
-	padding: .5rem 0;
-	color: $white;
-	text-decoration: none;
-
-	@include breakpoint(phone) {
-		flex-wrap: wrap;
-		text-align: center;
-	}
-
-	&:visited {
-		color: $white;
-	}
-
-	&:hover, &:active, &:focus {
-		color: $white;
-	}
-
-	&:not(:last-child) {
-		margin-right: .5rem;
-	}
-}
-
-.nav-item-icon {
-	margin-right: .375rem;
-	font-size: .875em;
-
-	@include breakpoint(phone) {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
-		font-size: 1.75rem;
-		line-height: 1;
-	}
-}
-
-.nav-item-text {
-	font-size: .875em;
-	@include tracking(30);
-	text-transform: uppercase;
-
-	@include breakpoint(phone) {
-		display: block;
-		font-size: .75em;
-		line-height: 1;
-	}
-}
-
 .header-nav {
-	padding: 0 1.25rem;// .25rem 1.25rem;
+	padding: 0 1.25rem;
 	background: $bg_ltgreen;
 	color: $white;
 }

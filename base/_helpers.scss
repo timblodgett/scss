@@ -1,20 +1,12 @@
 .wrapper {
 	width: 100%;
 	max-width: 75rem;
-	max-width: 100rem;
 	margin: 0 auto;
 }
 
-.clearfix {
-	&:before,
-	&:after {
-		content: '';
-		display: table;
-	}
-
-	&:after {
-		clear: both;
-	}
+.disclaimer {
+	font-size: .875em;
+	font-style: italic;
 }
 
 .screen-reader-text {
@@ -60,4 +52,16 @@
 	clear: both;
 	display: block;
 	margin: 0 auto;
+}
+
+.clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
 }
