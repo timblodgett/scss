@@ -4,8 +4,8 @@
 input,
 select,
 textarea {
-	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 }
 
@@ -32,9 +32,9 @@ input[type="tel"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
 	border: .0625em solid #ccc;
 	border-radius: .1875em;
+	color: #666;
 
 	&:focus {
 		color: #111;
