@@ -1,9 +1,9 @@
 // Color Variables
 // Brand Colors
-$csu_green:       #004C23;
-$bg_green:        #1E4D2B;
-$bg_ltgreen:      lighten($bg_green, 4%);
-$dk_green:        darken($csu_green, 2%);
+$csu_green:       #1E4D2B;
+$bg_ltgreen:      lighten($csu_green, 4%);
+$bg_green:        #004C23;
+$dk_green:        darken($bg_green, 2%);
 $csu_gold:        #CBC46E;
 $white:           #fff;
 $black:           #000;
@@ -30,7 +30,7 @@ $dk_grey:         #cfcfcf;
 $overlay:         rgba($black, .54);
 $overlay_wt:      rgba($white, .81);
 $selection_bg:    lighten($csu_gold, 4%);
-$selection_color: $dk_green;
+$selection_color: $bg_green;
 
 
 // Font Variables
