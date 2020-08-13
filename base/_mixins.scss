@@ -26,6 +26,11 @@
 	letter-spacing: ( $num / 1000 ) * 1em;
 }
 
+@mixin placeholder() {
+	opacity: 1;
+	color: #767676;
+}
+
 @mixin button() {
 	@include transition();
 	/* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
