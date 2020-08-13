@@ -1,6 +1,6 @@
 .main-navigation {
-	border-bottom: .125rem solid $csu_gold;
 	background: $white;
+	border-bottom: .125rem solid $csu_gold;
 
 	@include breakpoint(desktop) {
 		padding: 0 1.25rem;
@@ -16,7 +16,6 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
-
 		max-width: 100rem;
 
 		@include breakpoint(phone) {
@@ -29,8 +28,8 @@
 	}
 
 	.menu-toggle {
-		background: none;
 		width: 100%;
+		background: none;
 		border: none;
 		border-radius: 0;
 		padding: .5rem 1.25em;
@@ -71,7 +70,6 @@
 			&[aria-expanded=true],
 			& {
 				display: flex;
-				// padding: .5rem 0;
 			}
 		}
 
@@ -99,9 +97,9 @@
 					align-items: center;
 					justify-content: center;
 					margin-left: .375em;
-					border-left: .25em solid transparent;
-					border-right: .25em solid transparent;
 					border-top: .3125em solid;
+					border-right: .25em solid transparent;
+					border-left: .25em solid transparent;
 					font-size: 1.25em;
 				}
 			}
@@ -143,6 +141,7 @@
 				a {
 					padding: .125rem .375rem;
 				}
+
 				.menu-item {
 					a {
 						padding-left: 1rem;
