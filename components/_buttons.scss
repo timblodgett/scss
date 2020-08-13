@@ -2,12 +2,14 @@
 	@include button();
 	/* Corrects inability to style clickable 'input' types in iOS */
 	-webkit-appearance: button;
-	padding: .375em 1em;
 	background: $grey;
 	border-color: $dk_grey;
+	padding: .375em 1em;
 	color: $black_80;
 
-	&:hover, &:focus, &:active {
+	&:hover,
+	&:focus,
+	&:active {
 		background: $md_grey;
 	}
 }
@@ -20,9 +22,9 @@ button {
 .button {
 	@include button();
 	display: inline-block;
+	background: $bg_ltgreen;
 	border-color: transparent;
 	padding: .5625em 1.5em .4375em;
-	background: $bg_ltgreen;
 	color: white;
 	font-size: .9375em;
 	@include tracking(60);
@@ -34,9 +36,11 @@ button {
 		color: white;
 	}
 
-	&:hover, &:active, &:focus {
-		color: white;
+	&:hover,
+	&:active,
+	&:focus {
 		background: $dk_green;
+		color: white;
 		text-decoration: none;
 	}
 }
