@@ -71,7 +71,7 @@ h3 {
 }
 
 p {
-	margin-bottom: #{$line_height}em;
+	margin-bottom: $line_height_spacing;
 }
 
 b, strong {
@@ -83,12 +83,12 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 #{$line_height}em;
+	margin: 0 $line_height_spacing;
 	font-style: italic;
 }
 
 address {
-	margin: 0 0 #{$line_height}em;
+	margin: 0 0 $line_height_spacing;
 }
 
 pre {
@@ -96,10 +96,10 @@ pre {
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: .9375em;
 	line-height: $line_height;
-	margin-bottom: #{$line_height}em;
+	margin-bottom: $line_height_spacing;
 	max-width: 100%;
 	overflow: auto;
-	padding: #{$line_height}em;
+	padding: $line_height_spacing;
 }
 
 code, kbd, tt, var {
@@ -151,12 +151,12 @@ hr {
 	height: .0625em;
 	border: 0;
 	border-top: .0625em solid #ccc;
-	margin: #{$line_height}em 0;
+	margin: $line_height_spacing 0;
 	padding: 0;
 }
 
 ul, ol {
-	margin: 0 0 #{$line_height}em #{$line_height}em;
+	margin: 0 0 $line_height_spacing $line_height_spacing;
 }
 
 ul {
@@ -169,7 +169,7 @@ ol {
 
 li > ul, li > ol {
 	margin-bottom: 0;
-	margin-left: #{$line_height}em;
+	margin-left: $line_height_spacing;
 }
 
 dt {
@@ -177,7 +177,7 @@ dt {
 }
 
 dd {
-	margin: 0 #{$line_height}em #{$line_height}em;
+	margin: 0 $line_height_spacing $line_height_spacing;
 }
 
 img {
@@ -195,7 +195,7 @@ figure {
 }
 
 table {
-	margin: 0 0 #{$line_height}em;
+	margin: 0 0 $line_height_spacing;
 	width: 100%;
 }
 

@@ -10,7 +10,7 @@ img.wp-smiley {
 }
 
 .wp-caption {
-	margin-bottom: #{$line_height}em;
+	margin-bottom: $line_height_spacing;
 	max-width: 100%;
 
 	img[class*="wp-image-"] {

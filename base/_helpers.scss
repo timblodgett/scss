@@ -40,12 +40,12 @@
 
 .alignleft {
 	float: left;
-	margin-right: #{$line_height}em;
+	margin-right: $line_height_spacing;
 }
 
 .alignright {
 	float: right;
-	margin-left: #{$line_height}em;
+	margin-left: $line_height_spacing;
 }
 
 .aligncenter {
