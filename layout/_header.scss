@@ -1,10 +1,5 @@
-.site-header {
-	-ms-grid-row: 1;
-	grid-row: 1;
-}
-
 .header-top {
-	background: $bg_green;
+	background: $csu_green;
 
 	@include breakpoint(tablet) {
 		padding: 0 1.25rem;
@@ -31,8 +26,8 @@
 
 .csu-signature {
 	margin-right: .9375rem;
-	padding-right: .9375rem;
 	border-right: .125rem solid $white;
+	padding-right: .9375rem;
 	font-size: 1rem;
 }
 
@@ -83,7 +78,7 @@
 }
 
 .header-nav {
-	padding: 0 1.25rem;
 	background: $bg_ltgreen;
+	padding: 0 1.25rem;
 	color: $white;
 }
