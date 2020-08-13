@@ -9,6 +9,18 @@
 	font-style: italic;
 }
 
+.clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -18,7 +30,9 @@
 }
 
 .skip-link {
-	&:hover, &:active, &:focus {
+	&:hover,
+	&:active,
+	&:focus {
 		background-color: #f1f1f1;
 		border-radius: .25em;
 		box-shadow: 0 0 .125em .125em rgba(0, 0, 0, 0.5);
@@ -52,16 +66,4 @@
 	clear: both;
 	display: block;
 	margin: 0 auto;
-}
-
-.clearfix {
-	&:before,
-	&:after {
-		content: '';
-		display: table;
-	}
-
-	&:after {
-		clear: both;
-	}
 }
