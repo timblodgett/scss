@@ -45,7 +45,9 @@
 			color: $white;
 		}
 
-		&:hover, &:active, &:focus {
+		&:hover,
+		&:active,
+		&:focus {
 			opacity: 1;
 			text-decoration: underline;
 		}
