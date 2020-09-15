@@ -46,11 +46,10 @@ $body_font: $proxima;
 $heading_font: $factoria;
 $ident_font: $proxima;
 
-/* CSU Signature Sizes
- * acronym:  609 x 229 -- min: 113 -- max: 146
- * stacked:  929 x 229 -- min: 172 -- max: 221
- * oneline: 1883 x 229 -- min: 350 -- max: 450
- */
+// CSU Signature Sizes
+// acronym:  609 x 229 -- min: 113 -- max: 146
+// stacked:  929 x 229 -- min: 172 -- max: 221
+// oneline: 1883 x 229 -- min: 350 -- max: 450
 $signature_height:  2.75rem;
 $acronym_width:     7.3125rem;
 $stacked_width:    11.125rem;
